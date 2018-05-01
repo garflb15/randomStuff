@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <MenuBar style="" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" style="" text="File" visible="true">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+      <stylesheets>
+        <URL value="@TequilaStyleMenu.css" />
+      </stylesheets>
+    </MenuBar>
+    <SplitPane blendMode="SRC_OVER" dividerPositions="0.7683741648106904" style="&#10;&#10;" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <Pane prefHeight="555.0" prefWidth="685.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="288.0" layoutY="266.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Select Picture" textFill="#e68a00">
+                  <effect>
+                    <Lighting>
+                      <bumpInput>
+                        <Shadow />
+                      </bumpInput>
+                      <light>
+                        <javafx.scene.effect.Light.Distant>
+                          <color>
+                            <Color blue="0.000" green="0.541" red="0.902" fx:id="x1" />
+                          </color>
+                        </javafx.scene.effect.Light.Distant>
+                      </light>
+                    </Lighting>
+                  </effect>
+                  <font>
+                    <Font size="18.0" />
+                  </font>
+                </Label>
+              </children>
+            </Pane>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <SplitPane dividerPositions="0.5081669691470054" orientation="VERTICAL" prefHeight="551.0" prefWidth="218.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                  <children>
+                    <TabPane prefHeight="234.0" prefWidth="216.0" style="-fx-background-color: #e68a00;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <stylesheets>
+                        <URL value="@TequilaStyleTabs.css" />
+                      </stylesheets>
+                      <tabs>
+                        <Tab closable="false" style="&#10;" text="Auswahl">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="248.0" prefWidth="205.0" style="-fx-background-color: white;" />
+                          </content>
+                        </Tab>
+                        <Tab closable="false" text="Filter">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;" />
+                          </content>
+                        </Tab>
+                        <Tab text="Sample">
+                          <content>
+                            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                      </tabs>
+                    </TabPane>
+                  </children>
+                </AnchorPane>
+                <ListView prefHeight="274.0001220703125" prefWidth="197.9998779296875" style="">
+                  <stylesheets>
+                    <URL value="@TequilaSunriseList.css" />
+                  </stylesheets>
+                </ListView>
+              </items>
+              <stylesheets>
+                <URL value="@TequilaStyle.css" />
+              </stylesheets>
+            </SplitPane>
+          </children>
+        </AnchorPane>
+      </items>
+      <stylesheets>
+        <URL value="@TequilaStyleHorizontal.css" />
+        <URL value="@TequilaStyleVertikal.css" />
+      </stylesheets>
+    </SplitPane>
+    <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+      <children>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="Left status" textFill="$x1" HBox.hgrow="ALWAYS">
+          <font>
+            <Font size="11.0" fx:id="x3" />
+          </font>
+        </Label>
+        <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+        <Label font="$x3" maxWidth="-1.0" text="Right status" textFill="$x1" HBox.hgrow="NEVER" />
+      </children>
+      <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+      </padding>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../ComplexApplication_css1/ComplexApplication.css" />
+  </stylesheets>
+</VBox>

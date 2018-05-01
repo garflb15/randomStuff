@@ -1,0 +1,13 @@
+.menu-bar {
+    -fx-background-color: white;
+}
+
+.modBar
+{
+    -fx-background-color: white;
+}
+
+.menu .label
+{
+    -fx-text-fill: #e68a00;
+}

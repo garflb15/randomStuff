@@ -1,0 +1,9 @@
+@CHARSET "ISO-8859-1"
+
+.split-pane:vertical > .split-pane-divider {
+   -fx-background-color: #e68a00;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+   -fx-background-color: #e68a00;
+}

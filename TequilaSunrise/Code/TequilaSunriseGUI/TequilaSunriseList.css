@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1"
+
+.list-view .list-cell:even {
+-fx-background-color: white;
+-fx-text-fill: black;
+}
+.list-view .list-cell:odd {
+-fx-background-color: #d9d9d9;
+-fx-text-fill: black;
+}
