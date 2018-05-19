@@ -18,6 +18,7 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 
 /**
  *
@@ -27,14 +28,12 @@ public final class PicturePanel extends JPanel
 {
     private final File sourceFile;
     private DrawPanel drawPanel;
-
+    private JScrollPane scroolPane = new JScrollPane();
     private final LinkedList<File> fileList = new LinkedList<>();
 
     private int xScale = 1;
     private int yScale = 1;
-    
-    private int counter = 0;
-    
+        
     public PicturePanel(File sourceFile, int witdh, int height) throws IOException
     {
         this.sourceFile = sourceFile;        
@@ -67,7 +66,8 @@ public final class PicturePanel extends JPanel
         
         for (File file : fileList)
         {
-            try {
+            try
+            {
                 JPanel picturePanel = new JPanel();
                 picturePanel.setLayout(new BorderLayout());
                 System.out.println("pic");
@@ -91,6 +91,7 @@ public final class PicturePanel extends JPanel
         {
             this.add(new JPanel().add(new JLabel("Muster")));
         }
+        //this.add(scroolPane);
     }
     
     private void calculateScale(int witdh, int height)
