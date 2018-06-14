@@ -1,0 +1,6 @@
+#Log-In Daten
+
+db_user =postgres
+db_passwd =postgres
+db_url =jdbc:postgresql://localhost/postgres/
+db_driver =org.postgresql.Driver
